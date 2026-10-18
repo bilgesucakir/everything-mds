@@ -28,9 +28,3 @@ Markdown files I reuse across projects: checklists, templates, rules for AI codi
 - Copy a file into a project and edit it, or link to it.
 - Assistant rules (`claude/`) go where the tool reads them, for example `~/.claude/CLAUDE.md` or a project's `CLAUDE.md`.
 - Checklists: copy the file into your repo's `docs/` and tick the boxes per release.
-
-## Planned
-
-- Editor setup notes (VS Code layout and extensions).
-- Email on a custom domain (sending with SPF/DKIM, receiving with Email Routing): the exact steps, to be filled in from the real dashboards.
-- More checklists as they are written (release, accessibility, backend operations).
