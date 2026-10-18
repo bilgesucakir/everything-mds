@@ -1,6 +1,6 @@
 # everything-mds
 
-Markdown files I reuse across projects: checklists, templates, rules for AI coding assistants, and notes on tools. They are written to be useful to other people too, so they contain no personal data.
+Markdown files I reuse across projects: checklists, templates, rules for AI coding assistants, and notes on tools. They are written to be useful to other people too, so they contain no personal data and they are general.
 
 
 ## Contents
