@@ -1,3 +1,10 @@
+---
+domain: backend
+part: checklists
+summary: Login and API security review points
+adapt: Applies if the new project has accounts or a token API.
+---
+
 # Login and API security checklist
 
 For an app with email-and-password accounts and a token-based API. It is a review aid, not a guarantee: it does not replace testing by someone independent.

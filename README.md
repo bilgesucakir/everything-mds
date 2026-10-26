@@ -28,3 +28,36 @@ Markdown files I reuse across projects: checklists, templates, rules for AI codi
 - Copy a file into a project and edit it, or link to it.
 - Assistant rules (`claude/`) go where the tool reads them, for example `~/.claude/CLAUDE.md` or a project's `CLAUDE.md`.
 - Checklists: copy the file into your repo's `docs/` and tick the boxes per release.
+
+## Extractor: take only what you need
+
+Two ways to copy just the notes you need into another project: **run the script**, or **give a prompt to your assistant**.
+
+Every note is tagged with a **domain** (`general`, `web`, `ios`, `backend`, `ops`, `design`) and a **part** (`working-agreements`, `conventions`, `stack-rules`, `checklists`, `templates`, `playbooks`, `reference`) in its front matter. Mixed files tag single sections with `<!-- tags: domain=ios; part=templates -->` under the heading. A section is kept when its domain matches **any** chosen domain and its part matches **any** chosen part (no filter = all).
+
+### Option 1: run the script (Python 3, no dependencies)
+
+```bash
+git clone https://github.com/bilgesucakir/everything-mds.git ~/everything-mds   # once
+python3 ~/everything-mds/extractor/extract.py list                                   # what exists
+python3 ~/everything-mds/extractor/extract.py get --domain general,web -o docs/rules.md
+python3 ~/everything-mds/extractor/extract.py get --domain general,web --part working-agreements,checklists --zip -o rules.zip
+python3 ~/everything-mds/extractor/extract.py check                                  # validate tags (when adding notes)
+python3 ~/everything-mds/extractor/extract.py build-page                             # rebuild extractor/index.html
+```
+
+Prefer clicking? Open `extractor/index.html` in a browser, tick domains and parts, download the file (works offline; re-run `build-page` after editing notes).
+
+### Option 2: give this prompt to your assistant (in the new project)
+
+Fill in the `<...>` parts. A fuller version is in [`extractor/AGENT-PROMPT.md`](extractor/AGENT-PROMPT.md).
+
+```text
+Look up https://github.com/bilgesucakir/everything-mds (or ~/everything-mds if it exists on this machine; clone it into a temp folder otherwise). Read its README section "Extractor". Then copy into THIS project only the notes I need:
+- Project: <name>, kind: <web app / iOS app / API>, languages: <...>, hosting: <...>.
+- Domains: <e.g. general, web>. Parts: <all, or e.g. working-agreements, conventions, checklists>.
+Run `python3 <repo>/extractor/extract.py list`, then `get --domain <...> -o docs/rules-from-everything-mds.md` (or read the files by hand if you cannot run it).
+Put the working rules into this project's CLAUDE.md (or reference the combined file from it). Adapt names, paths, hosts and example.com to this project and follow each file's `adapt:` note.
+Do NOT copy: domains I did not ask for, case studies and worked examples from other products, vendor/plan/cost facts of other projects, anything marked (check) without re-verifying, or any secrets.
+Do not commit. Show me the diff and what you copied, changed and left out.
+```

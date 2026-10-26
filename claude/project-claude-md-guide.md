@@ -1,3 +1,10 @@
+---
+domain: general
+part: conventions
+summary: What to put in each project's CLAUDE.md, with backend / iPhone / website templates
+adapt: Take only the template that matches the new project; 'What existed' is a case study from one product.
+---
+
 # One `CLAUDE.md` per project: what to put in it
 
 An AI coding assistant reads a `CLAUDE.md` file at the root of the project (and `~/.claude/CLAUDE.md` for all projects; see `global-rules.md`). Each kind of project needs different rules. This page shows what a three-part product (backend, iPhone app, website) used, the gaps found, and templates to copy.
@@ -5,6 +12,7 @@ An AI coding assistant reads a `CLAUDE.md` file at the root of the project (and 
 Last verified: 2026-10-18.
 
 ## What existed (a real example)
+<!-- tags: domain=general; part=reference -->
 
 | Project | Instruction files | Findings |
 |---|---|---|
@@ -23,6 +31,7 @@ Last verified: 2026-10-18.
 - Start with the purpose of the project and what is **not** the assistant's job (end-to-end tests, store listing, billing).
 
 ## Template: backend API
+<!-- tags: domain=backend; part=templates -->
 
 ```markdown
 # <name> backend: rules for Claude
@@ -55,6 +64,7 @@ One paragraph: what the API serves, who calls it, where it runs.
 ```
 
 ## Template: iPhone app
+<!-- tags: domain=ios; part=templates -->
 
 ```markdown
 # <name> iOS app: rules for Claude
@@ -95,6 +105,7 @@ What the app does and who uses it.
 ```
 
 ## Template: static website
+<!-- tags: domain=web; part=templates -->
 
 ```markdown
 # <name> site: rules for Claude

@@ -1,3 +1,10 @@
+---
+domain: ios
+part: checklists
+summary: What to verify before, during and after App Store review
+adapt: iOS only.
+---
+
 # App Store review checklist (iOS)
 
 A practical checklist for getting a first iOS app through App Review. Written after shipping a first version and answering a "Guideline 2.1 – Information Needed" request.

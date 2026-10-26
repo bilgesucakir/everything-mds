@@ -1,3 +1,10 @@
+---
+domain: ios
+part: templates
+summary: App Review notes template and worked example
+adapt: iOS only.
+---
+
 # App Review notes: template and example
 
 Paste into **App Store Connect → App Review Information → Notes**. Apple asks for the same information when it sends a "Guideline 2.1 – Information Needed" message, and wants it in the Notes too. Keep the text specific; generic descriptions are rejected (Guideline 2.3.1(a)). The Notes field has a size limit (several thousand characters) **(check)**.

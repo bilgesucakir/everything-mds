@@ -1,3 +1,10 @@
+---
+domain: general
+part: working-agreements
+summary: Rules for an AI coding assistant on every project (ask before committing, honesty, secrets, deploys)
+adapt: Drop-in as ~/.claude/CLAUDE.md or the project CLAUDE.md. Nothing project-specific.
+---
+
 # Rules for an AI coding assistant (all projects)
 
 Short rules to give an assistant such as Claude Code at the start of any project. Put them in a global `CLAUDE.md` (for example `~/.claude/CLAUDE.md`) or paste them into a project's own `CLAUDE.md`.

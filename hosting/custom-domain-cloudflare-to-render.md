@@ -1,3 +1,10 @@
+---
+domain: web, ops
+part: playbooks
+summary: Domain at Cloudflare, site on Render
+adapt: Replace example.com / my-service. Only if hosting on Render.
+---
+
 # Domain at Cloudflare, site on Render
 
 The steps followed for several projects: the domain was bought at, and its DNS lives at, **Cloudflare**, and the site or service runs on **Render**. Examples used here: `example.com` (the domain) and `my-service` (the Render service). Screens change, so items marked **(check)** need confirming in each dashboard.

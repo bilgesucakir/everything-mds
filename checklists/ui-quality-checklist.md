@@ -1,3 +1,10 @@
+---
+domain: web, ios
+part: checklists
+summary: UI quality checks for apps and websites
+adapt: Parts A-C are shared; D and the phone test are iOS; E is web.
+---
+
 # UI quality checklist (apps and websites)
 
 Things that make a product feel unfinished or untrustworthy, grouped by area, plus a ten-minute phone test and the tools that help. Part A comes from a list that circulates among developers who build apps quickly with AI help; Parts B to E come from checklists used on a real app (accessibility, honest design, platform guidelines). Nothing here is Apple policy unless it says so, but reviewers and users notice these things.
@@ -66,6 +73,7 @@ Last verified: 2026-10-18.
 - [ ] The app shows who made it and how to contact them (an About or Settings screen with the version).
 
 ## Part D: platform guidelines (Apple)
+<!-- tags: domain=ios -->
 
 - [ ] Use standard system components (navigation, tab bars, toolbars, lists, sheets, alerts, menus) before inventing your own.
 - [ ] Follow the current Human Interface Guidelines for the OS version you target, including how materials and glass effects, tab bars, search and toolbars behave. The guidelines change every major release; check the "what changed" notes.
@@ -75,6 +83,7 @@ Last verified: 2026-10-18.
 - [ ] Before designing a screen or component, open the matching HIG page.
 
 ## Part E: websites
+<!-- tags: domain=web -->
 
 - [ ] Review the page against the Web Interface Guidelines (see tools below): semantics, labels, focus states, forms, images, motion, performance, dark mode.
 - [ ] Choose a design direction on purpose (colours, typography, spacing) instead of a generic template; write it down in a `DESIGN.md`.
@@ -83,6 +92,7 @@ Last verified: 2026-10-18.
 - [ ] Contrast, keyboard focus and "prefers-reduced-motion" tested.
 
 ## Ten-minute phone test
+<!-- tags: domain=ios -->
 
 1. **Airplane Mode:** open every tab; check for a clear message and a retry.
 2. **Keyboard:** open the longest form and the notes field with the keyboard up.
@@ -98,6 +108,7 @@ Last verified: 2026-10-18.
 Code can answer some points (search for hardcoded colours, placeholder strings, `ignoresSafeArea`, fixed font sizes, missing accessibility labels, number of translated strings). The rest needs a real device. Add automated UI tests for the flows that matter once the app is stable.
 
 ## Tools and skills that help
+<!-- tags: domain=general -->
 
 These are AI-assistant skills or reference collections. Install them as the project documents each one; check the licence before copying files into your own repository.
 

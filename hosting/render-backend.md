@@ -1,3 +1,10 @@
+---
+domain: backend, ops
+part: stack-rules
+summary: Small Spring Boot API on Render with Atlas, R2 and Brevo email, and operating lessons
+adapt: Stack-specific (Java, Atlas, R2, Brevo). Take section 3 'Operations lessons' if using Render; skip 1-2 otherwise.
+---
+
 # Backend on Render with Atlas, R2 and email: what we run and what it costs to watch
 
 A small Java (Spring Boot) API for a mobile app, run as one service. This describes the setup and the operating lessons, without secrets. Replace the names with your own.
@@ -5,6 +12,7 @@ A small Java (Spring Boot) API for a mobile app, run as one service. This descri
 Last verified: 2026-10-18.
 
 ## 1. The pieces
+<!-- tags: part=reference -->
 
 | Piece | Service | Notes |
 |---|---|---|
@@ -15,6 +23,7 @@ Last verified: 2026-10-18.
 | Uptime | **Better Stack** | Free plan: one monitor on the health endpoint; email alerts only |
 
 ## 2. Configuration rules
+<!-- tags: part=stack-rules -->
 
 - A `render.yaml` ("Blueprint") describes the service. Secrets are marked `sync: false` so their values are **never in the file or in git**; set them in the Render dashboard.
 - Generate the JWT signing secret once (`generateValue: true`) and keep it stable across deploys.
@@ -24,6 +33,7 @@ Last verified: 2026-10-18.
 - A mail sender address must be one your SMTP provider is allowed to send from (verify the domain with SPF/DKIM first).
 
 ## 3. Operations lessons
+<!-- tags: part=conventions; domain=ops, backend -->
 
 - **Auto-deploy on merge means a merge is a deploy.** While an app is in store review, do not merge backend changes: the reviewer uses the live API.
 - **Render has no spending cap.** Keep one fixed-price instance and check the billing page and bandwidth emails weekly.

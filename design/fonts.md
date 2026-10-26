@@ -1,3 +1,10 @@
+---
+domain: design, web
+part: reference
+summary: Free font sources and licence checks
+adapt: Section 'Example from a real project' is one site's case; adapt or drop.
+---
+
 # Fonts: where to find them and how to check the licence
 
 A plain-markdown copy of the `font-resources` skill, so it can be read without any tool.

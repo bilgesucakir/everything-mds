@@ -1,3 +1,10 @@
+---
+domain: general
+part: checklists
+summary: Data inventory, user rights, policy, store privacy answers
+adapt: Skip 'Apple specifics' unless shipping on the App Store.
+---
+
 # Privacy and data checklist (apps with accounts)
 
 Not legal advice. Laws that often apply: GDPR (EU), KVKK (Türkiye), CCPA (California), and children's rules (COPPA, age limits). Check what applies to your users.
@@ -25,6 +32,7 @@ Not legal advice. Laws that often apply: GDPR (EU), KVKK (Türkiye), CCPA (Calif
 - [ ] Update the policy and the store privacy answers **together** whenever something changes.
 
 ## 4. Apple specifics
+<!-- tags: domain=ios -->
 
 - [ ] App Privacy ("nutrition label") answered per data type: linked to the user or not, used for tracking or not, purposes.
 - [ ] Privacy manifest (`PrivacyInfo.xcprivacy`) matches the label; required-reason APIs have reasons.

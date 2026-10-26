@@ -1,3 +1,10 @@
+---
+domain: general
+part: templates
+summary: How to hand a task to another assistant session
+adapt: Nothing project-specific.
+---
+
 # Briefing another agent
 
 Use this when you hand a task to another assistant session (a separate iOS, backend or website session, for example). The first line is what the other person or session sees in a preview, so make it a complete sentence.

@@ -1,3 +1,10 @@
+---
+domain: web, ops
+part: stack-rules
+summary: Static site on Cloudflare Workers, domain, DNS and email
+adapt: Replace domain and project names; assumes Cloudflare Registrar + Workers.
+---
+
 # Cloudflare: static site on Workers, custom domain, and what else a Worker can do
 
 What was actually set up for a small product website, in the order it happened: the domain bought at **Cloudflare Registrar** and the front end (a static site of plain HTML, CSS and images) hosted on **Cloudflare Workers**, plus a plain explanation of Workers. **Why Workers:** hosting static front-end files there is free, so the whole site, including the domain's DNS and certificate, is handled in one dashboard. For a server (an API) see `render-backend.md`; for the other way round, a domain at Cloudflare but the site on Render, see `custom-domain-cloudflare-to-render.md`.

@@ -1,3 +1,10 @@
+---
+domain: general
+part: conventions
+summary: GitHub Projects board conventions, card contents, gh tips
+adapt: Rename title prefixes to the new project's areas.
+---
+
 # Board and cards (GitHub Projects)
 
 A simple way to keep a solo or small-team project organised across several repositories, and to hand cards to AI assistants.

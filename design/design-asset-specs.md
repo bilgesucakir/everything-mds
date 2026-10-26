@@ -1,3 +1,10 @@
+---
+domain: ios, design
+part: reference
+summary: App icon, screenshot and header asset sizes (Apple)
+adapt: iOS only; web icon/social-image sizes are not covered.
+---
+
 # Design asset specs (iOS, App Store)
 
 Pixel sizes and rules for the assets you make in a design tool. Apple changes these; every row marked **(check)** should be confirmed in App Store Connect before you spend hours designing. Last checked: 2026-10-18.

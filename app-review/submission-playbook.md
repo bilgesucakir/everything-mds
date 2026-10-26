@@ -1,3 +1,10 @@
+---
+domain: ios
+part: playbooks
+summary: Order of work for a first App Store submission
+adapt: iOS only.
+---
+
 # App Store submission playbook (first release)
 
 The order of work for shipping an iOS app, with the traps that cost time. Pair it with `app-store-review-checklist.md` (what to verify) and `review-notes-template.md`. Screen names and size limits change, so items marked **(check)** need confirming in App Store Connect.
