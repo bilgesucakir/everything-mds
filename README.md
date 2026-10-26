@@ -8,6 +8,7 @@ Markdown files I reuse across projects: checklists, templates, rules for AI codi
 | File | What it is for |
 |---|---|
 | [`claude/global-rules.md`](claude/global-rules.md) | Rules to give an AI coding assistant on every project (ask before committing, honesty, secrets, deploys) |
+| [`claude/dependency-vulnerability-check.md`](claude/dependency-vulnerability-check.md) | Before adding a framework or library: check known vulnerabilities and patch status, tell the owner, ask for an option |
 | [`claude/agent-briefing-template.md`](claude/agent-briefing-template.md) | How to hand a task to another assistant session |
 | [`app-review/app-store-review-checklist.md`](app-review/app-store-review-checklist.md) | What to verify before, during and after App Store review |
 | [`app-review/submission-playbook.md`](app-review/submission-playbook.md) | Step-by-step order of work for a first submission, and the traps |

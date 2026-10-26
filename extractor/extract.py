@@ -37,6 +37,7 @@ def load():
     """Return list of files: {path, title, meta, sections:[{heading, domains, parts, text}]}"""
     files = []
     for p in sorted(ROOT.glob("*/*.md")):
+        if p.parent.name == "extractor": continue
         txt = p.read_text(encoding="utf-8")
         meta = {}
         m = re.match(r"---\n(.*?)\n---\n+", txt, re.S)
